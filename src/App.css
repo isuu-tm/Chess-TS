@@ -17,19 +17,38 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.ceil {
+.cell {
     width: 64px;
     height: 64px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-
+.cell img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
 .black {
-    background-color: #647994;
+    background-color: #647893;
+}
+.white {
+    background-color: #9fa7b9;
 }
 
-.white {
-    background-color: #9CA5B2;
+.selected {
+    background-color: #22c022;
+}
+.available {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #57cadb;
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
 }
